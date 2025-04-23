@@ -1,6 +1,8 @@
 import { Route, Link, Routes } from 'react-router';
 import React from 'react';
 import './App.css';
+import './Classic.js'
+import ClassicApp from './Classic.js';
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
     <Routes>
         <Route index element={<Home />} />
         <Route path="about" element={<About />}> 
-        
+        <Route path="classic" element={<div className="page-container"><ClassicApp /></div>} />
         </Route>
     </Routes>
     </>
@@ -34,8 +36,7 @@ function Home() {
   ];
   
   return (
-    <div className="home-container">
-      <h1>Game Modes</h1>
+    <div className="page-container">
       <div className="buttons-grid">
         {BUTTONS.map((button) => (
           <Link 

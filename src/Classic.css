@@ -1,0 +1,126 @@
+.wordle-app {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .message {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .board {
+    margin-bottom: 30px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #d3d6da;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .cell.correct {
+    background-color: #6aaa64;
+    color: white;
+    border-color: #6aaa64;
+  }
+  
+  .cell.present {
+    background-color: #c9b458;
+    color: white;
+    border-color: #c9b458;
+  }
+  
+  .cell.absent {
+    background-color: #787c7e;
+    color: white;
+    border-color: #787c7e;
+  }
+  
+  .keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .keyboard-row {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  
+  .key {
+    height: 50px;
+    min-width: 40px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d3d6da;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  .key.wide-key {
+    min-width: 60px;
+    font-size: 0.8rem;
+  }
+  
+  .key.correct {
+    background-color: #6aaa64;
+    color: white;
+  }
+  
+  .key.present {
+    background-color: #c9b458;
+    color: white;
+  }
+  
+  .key.absent {
+    background-color: #787c7e;
+    color: white;
+  }
+  
+  .key:hover {
+    background-color: #bbbbbb;
+  }
+  
+  .key.correct:hover {
+    background-color: #5d9a57;
+  }
+  
+  .key.present:hover {
+    background-color: #b8a347;
+  }
+  
+  .key.absent:hover {
+    background-color: #6a6e70;
+  }
